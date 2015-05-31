@@ -1,0 +1,29 @@
+TroubleShoot
+
+Assuming running andriod app only with emulator
+1) Empty list of devices display when issue adb devices
+   or emulator is offline
+
+Problem : Emulator is not started
+Solution 1 : Start the emulator with command emulator -avd <avd-name>
+Soultion 2 : stop the server by command adb kill-server
+             start the server by command adb start-server
+
+Note : Starting of emulator takes time 5-10 minutes.
+
+2) error: device not found ...
+
+Problem : nnot connected with andriod device or emulator
+Solution : Follow error suggested above
+
+3) could not access the package manager. is the system running
+
+Problem : emulator is not started properly
+Solution : Wait for emutator to start
+
+4) Update command for adb
+
+5)Expected verb after global parameters but found 'sdk' instead
+
+Problem : Sdk is not started
+Solution : start the sdk android sdk
